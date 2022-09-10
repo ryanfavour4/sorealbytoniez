@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="../images/flower icon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/f877bee963.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <title>SoReal _ By Toniez | checkoutpage</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="topNav">
+                <div class="backArrow">
+                    <img src="../images/backarrow.svg" alt="" onclick="goBack()" class="backArrow">
+                </div>
+                <div class="logo">
+                    <img src="../images/soreallogo.png" alt="soreal" class="logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="subheading">
+                <h2>Checkout</h2>
+            </div>
+
+            <div class="formFields">
+                <div id="formOne">
+                    <div class="Tag"><h3>Personal Details</h3></div>
+                <form>
+                    <input type="text" placeholder="Name" class="UserName" required>
+                    <input type="tel" placeholder="Phone" class="UserNumber" required>
+                    <input type="email" placeholder="Email (optional)" required class="UserEmail">
+                </form>
+                </div>
+
+                <div id="formTwo">
+                    <div class="Tag"><h3>Address</h3></div>
+                    <form>
+                        <input type="text" placeholder="Country" class="UserCountry" required>
+                        <input type="text" placeholder="State" class="UserState" required>
+                        <input type="text" placeholder="City" class="UserCity" required>
+                        <input type="text" placeholder="Street" class="UserStreet" required>
+                    </form>
+                </div>
+                <div class="confirmReview">
+                    <div class="costs">
+                        <div class="expenseDetail">Item total price</div>
+                        <div>$<span class="expensePrice">10000</span></div>
+                    </div>
+                    <div class="costs">
+                        <div class="shippingDetail">Shipping Fee</div>
+                        <div>$ <span class="shippingPrice">10000</span></div>
+                    </div>
+                    <div class="costs">
+                        <div class="totalCost"><h3>TOTAL COST</h3></div>
+                        <div><h3>$<span class="totalCostPrice">10000</span></h3></div>
+                    </div>
+                    <div class="confirmCancel">
+                        <button class="confirm">CONFIRM</button>
+                        <button class="cancel" onclick="goBack()">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- blocking modal -->
+        <div class="successModal gone">
+            <div class="modalBox">
+                <div class="logoCheckMark">
+                    <img src="../images/soreallogo.png" class="modalLogo" alt="logo">
+                </div>
+                <div class="btnClear">
+                    <h4>Go look fabulous !</h4>
+                    <p class="successText">
+                        Your order was successful !
+                        <img src="../images/check-green.gif" class="modalcheck"  alt="check">
+                    </p>
+                    <button class="okAndClear">
+                        <a href="/">Go to home</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+       <!-- blocking modal -->
+
+    </main>
+    <footer></footer>
+    <script src="../javascript/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Monoton&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* default css rule sets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* smooth scrolling */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* general colors */
+
+:root{
+    --body-color:#ECECEC;
+    --primary-pink:#ff2281;
+    --faded--link:#5e5e5e;
+    --box-grey:#9A9A9A; /*a bit transparent on the boxes*/
+    --btn-dark-blue:#1F3BAF;
+    --light-blue:#0085FF;
+    --default-black:#000;
+    --default-white:#ffffff;
+    --transparent-Modal:rgba(0, 0, 0, 0.423);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--default-black);
+    font-size: 10pt;
+    font-family: 'inter',sans-serif;
+    font-weight: 400;
+    user-select: none;
+    position: relative;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 95.5%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* styling for top navigation area */
+
+.header-section{
+    border-bottom: 2px groove var(--primary-pink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.header-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.notifications a,.cart{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.notifications img{
+    width: 120px;
+    height: 27px;
+}
+
+.logo img{
+    width: 155px;
+    height: 50px;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart img{
+    width: 140px;
+    height: 40px;
+}
+
+.cart.incart::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: rgb(195, 0, 0);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    right: 40%;
+    top: 9px;
+    z-index: -1;
+}
+
+.backArrow img{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.topNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    border-bottom: 1.5px inset var(--faded--link);
+}
+
+/* styling for top nav end */
+
+/* main */
+
+.subheading{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.Tag{
+    background: var(--primary-pink);
+    padding: 0.5rem 1rem;
+    color: var(--default-white);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+form{
+    padding: 0.4rem 1rem;
+}
+
+
+form input{
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid var(--faded--link);
+    padding: 0.4rem 1rem;
+    display: block;
+    width: 100%;
+    margin: 1.2rem 0;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--light-blue);
+}
+
+.costs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.confirmReview{
+    margin-top: 2em;
+    line-height: 200%;
+}
+
+.confirmCancel button{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1.3rem 0;
+    border: none;
+    background: var(--light-blue);
+    color: var(--default-white);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+}
+
+.confirmCancel .cancel{
+    background: none;
+    color: var(--faded--link);
+}
+
+/* modal */
+.modalLogo{
+    width: 8rem;
+    height: 3rem;
+    margin: 2rem;
+}
+
+.modalcheck{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: fill;
+    margin: 1rem;
+}
+
+.logoCheckMark,.successText{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.btnClear{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.successText{
+    margin-left: 1rem;;
+}
+
+.successModal{
+    background: var(--default-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:all 1s ease;
+}
+
+.modalBox{
+    background: var(--default-white);
+    box-shadow: 1px 1px 8px 0px var(--faded--link);
+    max-width: 400px;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.okAndClear{
+    border: none;
+    margin: 1rem;
+    border-radius: 9px;
+    background: var(--primary-pink);
+}
+
+.okAndClear a{
+    color: var(--default-white);
+    background: var(--primary-pink);
+    display: block;
+    padding: 11px;
+    width: 300px;
+    min-width: 100px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+
+/* js adding and removing */
+
+.gone{
+    opacity: 0;
+    display: none;
+}
+
+.appear{
+    opacity: 1;
+    transition:all 1s ease;
+    display:flex;
+}

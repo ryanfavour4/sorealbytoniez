@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Monoton&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* default css rule sets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* smooth scrolling */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* general colors */
+
+:root{
+    --body-color:#ECECEC;
+    --primary-pink:#ff2281;
+    --faded--link:#5e5e5e;
+    --box-grey:#9A9A9A; /*a bit transparent on the boxes*/
+    --btn-dark-blue:#1F3BAF;
+    --light-blue:#0085FF;
+    --default-black:#000;
+    --default-white:#ffffff;
+    --transparent-Modal:rgba(0, 0, 0, 0.423);
+}
+
+body{
+    background-color: var(--default-black);
+    color: var(--default-black);
+    font-size: 11pt;
+    font-family: 'inter',sans-serif;
+    font-weight: 600;
+    line-height: 200%;
+    position: relative;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 95.5%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.numberOfOrders{
+    background: red;
+    color: var(--default-white);
+    padding: 8px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 155px;
+    height: 50px;
+}
+/* styling for top navigation area */
+
+
+.top-nav{
+    background: var(--default-white);
+    padding:0.6rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* admin styles for each user */
+.basicinfo,.addressinfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.tag{
+    color: var(--light-blue);
+}
+
+#Completed{
+    float: right;
+    margin: 30px;
+}
+
+.productsNeeded{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.USERORDERED{
+    background: var(--primary-pink);
+    width: 100%;
+    padding: 0.4rem 10%;
+    color: var(--default-white);
+}
+
+.eachProd{
+    margin: 3rem 0;
+    line-height: 220%;
+}
+
+.total{
+    background: var(--light-blue);
+    width: 100%;
+    color: var(--default-white);
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eachShoppeer:nth-child(even){
+    background: var(--default-white);
+}
+
+.eachShoppeer{
+    background: var(--body-color);
+    padding-top: 2rem;
+    margin: 50px 0;
+}

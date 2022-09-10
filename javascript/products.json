@@ -1,0 +1,128 @@
+[
+    {
+        "id":1,
+        "name":"Bum-Bum and Belly",
+        "images":"../img/bum-bum and belly.png",
+        "genre":"oprah",
+        "price":23000
+    },
+    {
+        "id":2,
+        "name":"EDGE SILK (black)",
+        "images":"../img/edge silk dark.png",
+        "genre":"reallover",
+        "price":4000
+    },
+    {
+        "id":3,
+        "name":"Edge Silk Extra Hold",
+        "images":"../img/edge silk extra hold copy.png",
+        "genre":"angelina",
+        "price":5000
+    },
+    {
+        "id":4,
+        "name":"Edge Silk Extra Hold (infused coconut oil)",
+        "images":"../img/edge silk extra hold dark.png",
+        "genre":"reallover",
+        "price":1000
+    },
+    {
+        "id":5,
+        "name":"Edge Silk",
+        "images":"../img/edge silk.png",
+        "genre":"angelina",
+        "price":9000
+    },
+    {
+        "id":6,
+        "name":"Edge Sleek Extra Hold",
+        "images":"../img/edge sleek extra hold.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":7,
+        "name":"Edge slick gel",
+        "images":"../img/edge slick gel.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":8,
+        "name":"Edge slick styling wax stick",
+        "images":"../img/edge slick styling wax stick.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":9,
+        "name":"Mommy and baby foaming mousse",
+        "images":"../img/mommy and baby foaming mousse.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":10,
+        "name":"Mums tummy and my baby butter",
+        "images":"../img/mums tummy and my baby butter.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":11,
+        "name":"professional styling wax stick",
+        "images":"../img/professional styling wax stick.png",
+        "genre":"reallover",
+        "price":100
+    },
+    {
+        "id":12,
+        "name":"Pure silk serum",
+        "images":"../img/pure silk serum.png",
+        "genre":"angelina",
+        "price":100
+    },
+    {
+        "id":13,
+        "name":"Pure silk shine",
+        "images":"../img/pure silk shine.png",
+        "genre":"miss",
+        "price":100
+    },
+    {
+        "id":14,
+        "name":"Radiant silk serum",
+        "images":"../img/radiant silk serum.png",
+        "genre":"reallover",
+        "price":100
+    },
+    {
+        "id":15,
+        "name":"Real lover braid and scalp conditioner",
+        "images":"../img/real lover braid and scalp conditioner.png",
+        "genre":"reallover",
+        "price":100
+    },
+    {
+        "id":16,
+        "name":"Shea lover hair and scalp conditioner",
+        "images":"../img/shea lover hair and scalp conditioner.png",
+        "genre":"reallover",
+        "price":100
+    },
+    {
+        "id":17,
+        "name":"Styling wax stick",
+        "images":"../img/styling wax stick.png",
+        "genre":"oprah",
+        "price":100
+    },
+    {
+        "id":18,
+        "name":"Super silky styling mousse",
+        "images":"../img/super silky styling mousse.png",
+        "genre":"angelina",
+        "price":100
+    }
+]
